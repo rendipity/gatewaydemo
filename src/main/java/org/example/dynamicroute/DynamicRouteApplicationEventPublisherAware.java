@@ -19,6 +19,6 @@ public class DynamicRouteApplicationEventPublisherAware implements ApplicationEv
     public void setApplicationEventPublisher(ApplicationEventPublisher applicationEventPublisher) {
         log.info("ApplicationEventPublisherAware 执行了");
         this.applicationEventPublisher = applicationEventPublisher;
-        dynamicRouteService.addRoute();
+        dynamicRouteService.init();
     }
 }
